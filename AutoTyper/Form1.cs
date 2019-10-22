@@ -16,5 +16,22 @@ namespace AutoTyper
         {
             InitializeComponent();
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Clear();
+        }
+
+        private void btnPaste_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Clear();
+            richTextBox1.Text = Clipboard.GetText();
+        }
+
+        private void btnType_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread.Sleep(Convert.ToInt32(numDelay.Value * 1000));
+            SendKeys.Send(richTextBox1.Text);
+        }
     }
 }
