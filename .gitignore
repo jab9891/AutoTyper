@@ -18,7 +18,7 @@
 x64/
 x86/
 bld/
-[Bb]in/
+#[Bb]in/
 [Oo]bj/
 [Ll]og/
 
@@ -69,6 +69,7 @@ artifacts/
 *.pidb
 *.svclog
 *.scc
+*.exe.config
 
 # Chutzpah Test files
 _Chutzpah*
